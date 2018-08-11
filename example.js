@@ -8,7 +8,19 @@ const { prompt } = require('./lib');
             type: 'text',
             name: 'twitter',
             message: `What's your twitter handle?`,
+            validate: (value) => {
+                return value === `terkelg`;
+            },
+            format: v => `@${v}`
+        },
+        {
+            type: 'text',
+            name: 'twitter',
+            message: `What's your twitter handle?`,
             initial: 'terkelg',
+            validate: (value) => {
+                return value === `terkelg`;
+            },
             format: v => `@${v}`
         },
         {
